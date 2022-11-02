@@ -7,7 +7,7 @@
   margin-bottom: calc(-1 * var(--card-set-gap));
 
   &__item {
-    flex-basis: calc(100% / 3 - 30px);
+    width: calc(100% / 3 - 30px);
     margin-right: var(--card-set-gap);
     margin-bottom: var(--card-set-gap);
   }
