@@ -859,7 +859,18 @@ body {
 }
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    align-items: baseline;
+    justify-content: start;
+    flex-direction: row;
+    text-align: inherit;
+  }
 }
 .footer__logo {
   font-family: "Raleway";
@@ -876,7 +887,6 @@ body {
 
 .address {
   width: 231px;
-  margin-right: 70px;
   font-style: normal;
 }
 .address__map {
@@ -923,10 +933,6 @@ body {
   height: 100%;
   gap: 10px;
 }
-.footerSoc__list:last-child {
-  margin-right: 93px;
-}
-
 .footerSoc__item {
   width: 44px;
   height: 44px;
@@ -968,7 +974,6 @@ body {
   color: var(--white-text-color);
   width: 358px;
   padding: 15px 16px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
