@@ -1,0 +1,35 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+
+  @include fonts(500, 14px, 1.14, 0.02em);
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__item a:hover,
+  &__item a:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+
+  &__mail,
+  &__tel {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-text-color);
+    fill: var(--primary-text-color);
+
+    transition: color 250ms var(--timing-function);
+  }
+
+  &__mailIcon,
+  &__telIcon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

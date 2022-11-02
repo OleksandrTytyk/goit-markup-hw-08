@@ -1,0 +1,36 @@
+.teamSoc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px 30px 32px;
+
+  &__item {
+    height: 44px;
+    width: 44px;
+  }
+
+  &__link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--primary-font-color);
+    fill: var(--primary-icon-color);
+
+    transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      fill: var(--white-text-color);
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

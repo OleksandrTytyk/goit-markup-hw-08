@@ -1,0 +1,32 @@
+@import "./base/reset";
+@import "./base/body";
+
+@import "./utils/visualy-hidden";
+@import "./utils/variables";
+@import "./utils/mixin";
+
+@import "./component/container";
+@import "./component/section";
+@import "./component/modal/modal";
+@import "./component/modal/form";
+@import "./component/modal/textarea";
+@import "./component/modal/checkbox";
+@import "./component/modal/check-button";
+
+@import "./layouts/header/header";
+@import "./layouts/header/header-contacts";
+@import "./layouts/hero/hero";
+@import "./layouts/hero/hero-btn";
+@import "./layouts/features";
+@import "./layouts/description";
+@import "./layouts/team/team";
+@import "./layouts/team/team-soc";
+@import "./layouts/clients";
+@import "./layouts/filter-btn";
+@import "./layouts/projects";
+@import "./layouts/footer/footer";
+@import "./layouts/footer/footer-adress";
+@import "./layouts/footer/footer-soc";
+@import "./layouts/footer/footer-form"
+
+

@@ -1,0 +1,36 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__btn {
+    font-family: inherit;
+
+    @include fonts(500, 16px, 1.62, 0.03em);
+
+    background-color: var(--button-bcg-color);
+    cursor: pointer;
+
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
+      filter 250ms var(--timing-function);
+
+    &--first {
+      padding: 6px 25px;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--white-text-color);
+      background-color: var(--accent-color);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}

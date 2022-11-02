@@ -1,0 +1,42 @@
+.textareaField {
+  margin-bottom: 20px;
+}
+
+.textarea__comment {
+  display: block;
+
+  @include fonts(null, 12px, 1.17, 0.01em);
+
+  margin-bottom: 4px;
+}
+
+.textarea__form {
+  display: block;
+  height: 120px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  resize: none;
+  outline: transparent;
+  cursor: pointer;
+
+  padding-top: 6px;
+  padding-right: 16px;
+  padding-bottom: 19px;
+  padding-left: 12px;
+
+  transition: border 250ms var(--timing-function);
+
+  &:focus {
+    border: 1px solid #2196f3;
+    transition: border 250ms var(--timing-function);
+  }
+
+  &::placeholder {
+    
+    @include fonts(null, 12px, 1.17, 0.01em);
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
