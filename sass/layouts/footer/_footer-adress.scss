@@ -1,16 +1,23 @@
 .address {
   width: 231px;
-  // margin-right: 70px;
+
   font-style: normal;
 
-  &__map {
+  @include desktop {
+  margin-right: 70px;
+  }
 
+  &__map {
     @include fonts(null, 14px, 1.71, 0.03em);
 
     color: var(--white-text-color);
 
     display: inline-block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @include desktop {
+      margin-bottom: 9px;
+    }
 
     transition: color 250ms var(--timing-function);
 
@@ -22,7 +29,6 @@
 
   &__mail,
   &__tel {
-
     @include fonts(null, 14px, 1.71, 0.03em);
 
     display: inline-block;
@@ -36,9 +42,19 @@
     }
   }
 
+  &__tel {
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 60px;
+    }
+  }
+
   &__mail {
-  margin-bottom: 9px;
-}
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 8px;
+    }
 
+    @include desktop {
+      margin-bottom: 9px;
+    }
+  }
 }
-

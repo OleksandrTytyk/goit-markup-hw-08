@@ -14,13 +14,22 @@
   background-color: inherit;
   color: var(--white-text-color);
 
-  width: 358px;
+  
   padding: 15px 16px;
-  // margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: transparent;
+
+  @include mobile {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @include desktop {
+      margin-right: 12px;
+      width: 358px;
+  }
 
   &::placeholder {
 
