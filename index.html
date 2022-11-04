@@ -468,15 +468,17 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <b class="footerInput__label">Підпишіться на розсилку</b>
-          <div class="footer__container">
-            <label for="email"></label>
-            <input type="email" name="email" placeholder="E-mail" class="footerInput__field" />
-            <button class="footerInput__button" type="submit">
+        <form class="footerForm">
+          <b class="footerForm__label">Підпишіться на розсилку</b>
+          <div class="footerForm__subscribe">
+            <label for="email">
+              <input type="email" name="email" placeholder="E-mail" class="footerForm__field" />
+            </label>
+            
+            <button class="footerForm__button" type="submit">
               Підписатися
               <svg width="24" height="24">
-                <use class="footerInput__img" href="./images/icons.svg#icon-send"></use>
+                <use class="footerForm__img" href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </div>

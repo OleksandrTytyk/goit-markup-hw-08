@@ -1,10 +1,11 @@
 .address {
-  width: 231px;
+ 
 
   font-style: normal;
 
   @include desktop {
   margin-right: 70px;
+   width: 231px;
   }
 
   &__map {
@@ -43,7 +44,7 @@
   }
 
   &__tel {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199.5px) {
       margin-bottom: 60px;
     }
   }

@@ -1,4 +1,4 @@
-.footerInput__label {
+.footerForm__label {
   display: block;
 
   @include fonts(null, 14px, 1.14, 0.03em);
@@ -10,36 +10,38 @@
   margin-bottom: 20px;
 }
 
-.footerInput__field {
+
+
+.footerForm__field {
   background-color: inherit;
   color: var(--white-text-color);
 
-  
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: transparent;
 
-  @include mobile {
-    width: 450px;
-    margin-bottom: 20px;
-  }
+  width: 100%;
+
+
+@media screen and (max-width: 1199.5px){
+  margin-bottom: 20px;
+}
 
   @include desktop {
-      margin-right: 12px;
-      width: 358px;
+    margin-right: 12px;
+    width: 358px;
   }
 
   &::placeholder {
-
     @include fonts(null, 16px, 1.25, 0.03em);
 
     color: rgba(255, 255, 255, 0.6);
   }
 }
 
-.footerInput__button {
+.footerForm__button {
   display: flex;
   align-items: center;
   text-align: center;
@@ -64,5 +66,10 @@
     background-color: var(--hero-button-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+  }
+
+  @media screen and (max-width:1199px){
+    margin: 0 auto;
+    
   }
 }

@@ -6,6 +6,7 @@
 
 .footerSoc__label {
   display: block;
+    text-align: center;
 
   @include fonts(null, 14px, 1.14, 0.03em);
 
@@ -13,6 +14,10 @@
 
   margin-bottom: 20px;
   color: var(--white-text-color);
+
+  @include desktop {
+      text-align: start;
+  }
 }
 
 .footerSoc__list {

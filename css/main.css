@@ -69,7 +69,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -859,24 +859,28 @@ body {
 }
 .footer__container {
   display: flex;
-  justify-content: center;
-  text-align: center;
   flex-direction: column;
-  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
+    justify-content: space-around;
+    align-items: baseline;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
+    flex-wrap: nowrap;
     align-items: baseline;
-    justify-content: start;
-    flex-direction: row;
-    text-align: inherit;
+  }
+}
+.footer__adress {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__adress {
+    text-align: start;
   }
 }
 .footer__logo {
@@ -899,13 +903,45 @@ body {
   color: var(--logo-accent-color);
 }
 
+.address__list {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footerForm {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footerForm {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footerForm {
+    text-align: start;
+  }
+}
+
+.footerForm__subscribe {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footerForm__subscribe {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
 .address {
-  width: 231px;
   font-style: normal;
 }
 @media screen and (min-width: 1200px) {
   .address {
     margin-right: 70px;
+    width: 231px;
   }
 }
 .address__map {
@@ -936,7 +972,7 @@ body {
 .address__mail:hover, .address__mail:focus, .address__tel:hover, .address__tel:focus {
   color: var(--accent-color);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.5px) {
   .address__tel {
     margin-bottom: 60px;
   }
@@ -960,12 +996,18 @@ body {
 
 .footerSoc__label {
   display: block;
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--white-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .footerSoc__label {
+    text-align: start;
+  }
 }
 
 .footerSoc__list {
@@ -1007,7 +1049,7 @@ body {
   fill: currentColor;
 }
 
-.footerInput__label {
+.footerForm__label {
   display: block;
   font-size: 14px;
   line-height: 1.14;
@@ -1017,7 +1059,7 @@ body {
   margin-bottom: 20px;
 }
 
-.footerInput__field {
+.footerForm__field {
   background-color: inherit;
   color: var(--white-text-color);
   padding: 15px 16px;
@@ -1025,39 +1067,39 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: transparent;
+  width: 100%;
 }
-@media screen and (min-width: 480px) {
-  .footerInput__field {
-    width: 450px;
+@media screen and (max-width: 1199.5px) {
+  .footerForm__field {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footerInput__field {
+  .footerForm__field {
     margin-right: 12px;
     width: 358px;
   }
 }
-.footerInput__field::-moz-placeholder {
+.footerForm__field::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footerInput__field:-ms-input-placeholder {
+.footerForm__field:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footerInput__field::placeholder {
+.footerForm__field::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footerInput__button {
+.footerForm__button {
   display: flex;
   align-items: center;
   text-align: center;
@@ -1078,8 +1120,13 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footerInput__button:hover, .footerInput__button:focus {
+.footerForm__button:hover, .footerForm__button:focus {
   background-color: var(--hero-button-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+@media screen and (max-width: 1199px) {
+  .footerForm__button {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=main.css.map */
