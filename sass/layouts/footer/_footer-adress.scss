@@ -1,12 +1,16 @@
 .address {
- 
-
   font-style: normal;
 
   @include desktop {
-  margin-right: 70px;
-   width: 231px;
+    margin-right: 70px;
+    width: 231px;
   }
+
+  &__list {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
 
   &__map {
     @include fonts(null, 14px, 1.71, 0.03em);
@@ -59,3 +63,4 @@
     }
   }
 }
+

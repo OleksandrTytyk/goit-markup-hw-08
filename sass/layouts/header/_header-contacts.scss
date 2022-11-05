@@ -1,11 +1,23 @@
 .contacts {
+
   display: flex;
   margin-left: auto;
+  flex-direction: column;
 
-  @include fonts(500, 14px, 1.14, 0.02em);
+  gap: 10px;
+
+  @include desktop {
+    flex-direction: row;
+    gap: 0;
+    @include fonts(500, 14px, 1.14, 0.02em);
+  }
+
+  @include fonts(500, 12px, 1.17, 0.02em);
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    @include desktop {
+      margin-right: 50px;
+    }
   }
 
   &__item a:hover,
@@ -18,8 +30,13 @@
   &__tel {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    @include desktop {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     color: var(--primary-text-color);
     fill: var(--primary-text-color);

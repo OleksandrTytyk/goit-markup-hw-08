@@ -6,42 +6,25 @@
   &__container {
     display: flex;
     flex-direction: column;
-    // row-gap: 60px;
-
-  //     @include tablet {
-  //   // justify-content: center;
-  //   flex-direction: row;
-  //   flex-wrap: wrap;
-  //   // column-gap: 30px;
-  // }
-
-  // @include desktop {
-  //   flex-wrap: nowrap;
-  //   align-items: baseline;
-  // }
 
     @include tablet {
       justify-content: space-around;
-   align-items: baseline;
+      align-items: baseline;
       flex-direction: row;
       flex-wrap: wrap;
-      // column-gap: 30px;
     }
+
     @include desktop {
       flex-wrap: nowrap;
       align-items: baseline;
+      justify-content: start;
     }
   }
 
   &__adress {
     text-align: center;
 
-    // @include tablet {
-    //   width: calc((100% - 30px) / 2);
-    // }
-
     @include desktop {
-      // width: calc((100% - 90px) / 4);
       text-align: start;
     }
   }
@@ -66,181 +49,7 @@
   }
 }
 
-.address__list {
-    font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.footerForm {
-    width: 100%;
-  // margin: 0 auto;
-  text-align: center;
-
-  @include tablet {
-    width: 450px;
-  }
-
-  @include desktop {
-    // width: calc((100% - 30px) / 2);
-    text-align: start;
-  }
-}
-
-.footerForm__subscribe {
-    display: flex;
-  flex-direction: column;
-
-  @include desktop {
-    flex-direction: row;
-    width: 100%;
-  }
-
-  // .address {
- 
-
-//   font-style: normal;
-
-//   @include desktop {
-//   margin-right: 70px;
-//    width: 231px;
-//   }
-
-//   &__map {
-//     @include fonts(null, 14px, 1.71, 0.03em);
-
-//     color: var(--white-text-color);
-
-//     display: inline-block;
-//     margin-bottom: 8px;
-
-//     @include desktop {
-//       margin-bottom: 9px;
-//     }
-
-//     transition: color 250ms var(--timing-function);
-
-//     &:hover,
-//     &:focus {
-//       color: var(--accent-color);
-//     }
-//   }
-
-//   &__mail,
-//   &__tel {
-//     @include fonts(null, 14px, 1.71, 0.03em);
-
-//     display: inline-block;
-//     color: var(--transparent-white-color);
-
-//     transition: color 250ms var(--timing-function);
-
-//     &:hover,
-//     &:focus {
-//       color: var(--accent-color);
-//     }
-//   }
-
-//   &__tel {
-//     @media screen and (max-width: 1200px) {
-//       margin-bottom: 60px;
-//     }
-//   }
-
-//   &__mail {
-//     @media screen and (max-width: 1200px) {
-//       margin-bottom: 8px;
-//     }
-
-//     @include desktop {
-//       margin-bottom: 9px;
-//     }
-//   }
-// }
 
 
 
 
-
-
-
-
-
-
-
-
-}
-//   &__adress {
-//     @media screen and (max-width: 767px) {
-//       text-align: center;
-//     }
-//
-
-//   &__container {
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     align-items: baseline;
-//     // @include tablet {
-//     //   display: flex;
-//     //   justify-content: center;
-//     //   text-align: center;
-//     //   flex-direction: column;
-//     //   align-items: center;
-//     // }
-
-//     // @include desktop {
-//     //   display: flex;
-//     //   justify-content: center;
-//     //   text-align: center;
-//     //   flex-direction: column;
-//     //   align-items: center;
-//     // }
-
-//     @include tablet {
-//       //       display: flex;
-//       //             justify-content: center;
-//       // text-align: center;
-
-//       // flex-direction: row;
-//       // flex-wrap: wrap;
-//       // align-items: baseline;
-//     }
-
-//     @include desktop {
-//       align-items: baseline;
-//       justify-content: start;
-//       flex-direction: row;
-//       text-align: inherit;
-//     }
-
-//     // @media screen and (max-width: 479px){
-//     //   flex-direction: column;
-//     //   align-items: center;
-//     //   justify-content: center;
-//     //   text-align: center;
-//     // }
-//   }
-
-//   &__logo {
-//     font-family: 'Raleway';
-
-//     @include fonts(null, 24px, 1.16, 0.03em);
-
-//     @include desktop {
-//       @include fonts(null, 26px, 1.19, 0.03em);
-//     }
-
-//     color: var(--white-text-color);
-
-//     display: inline-block;
-//     margin-bottom: 20px;
-
-//     &--accent {
-//       color: var(--logo-accent-color);
-//     }
-//   }
-// }
