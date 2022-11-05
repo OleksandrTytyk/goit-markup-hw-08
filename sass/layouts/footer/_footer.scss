@@ -4,20 +4,10 @@
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
-    flex-direction: column;
-
-    @include tablet {
-      justify-content: space-around;
-      align-items: baseline;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
 
     @include desktop {
-      flex-wrap: nowrap;
+      display: flex;
       align-items: baseline;
-      justify-content: start;
     }
   }
 
@@ -46,6 +36,22 @@
     &--accent {
       color: var(--logo-accent-color);
     }
+  }
+}
+
+.footerCont {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+.footerField {
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

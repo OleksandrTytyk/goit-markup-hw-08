@@ -2,11 +2,16 @@
   @media screen and (min-width: 767.5px) {
     display: none;
   }
-  display: flex;
-  align-items: center;
-  padding: 0px 15px;
+}
 
-  &__logo {
+
+.menuMin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+
+      &__logo {
     display: flex;
     align-items: center;
     padding: 15px 0px;
@@ -21,10 +26,4 @@
       color: var(--logo-accent-color);
     }
   }
-}
-
-.mobMenu__openBtn {
-  width: 24px;
-  height: 24px;
-  margin-left: auto;
 }
