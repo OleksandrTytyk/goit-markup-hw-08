@@ -27,3 +27,21 @@
     }
   }
 }
+
+.menuOpen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  transform: translateX(-100%);
+&__closeBtn {
+  display: block;
+  margin-left: auto;
+}
+}
+.menuOpen.is-open {
+  transform: translateX(0);
+}

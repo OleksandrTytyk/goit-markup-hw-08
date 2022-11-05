@@ -358,6 +358,25 @@ body {
   color: var(--logo-accent-color);
 }
 
+.menuOpen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  transform: translateX(-100%);
+}
+.menuOpen__closeBtn {
+  display: block;
+  margin-left: auto;
+}
+
+.menuOpen.is-open {
+  transform: translateX(0);
+}
+
 .header {
   border-bottom: 1px solid var(--border-line);
 }

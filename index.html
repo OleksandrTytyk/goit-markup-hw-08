@@ -34,11 +34,18 @@
           >
             <span class="menuMin__logo--accent">Web</span>Studio</a
           >
-          <button type="button" class="mobMenu__openBtn">O</button>
+          <button
+            type="button"
+            class="mobMenu__openBtn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            O
+          </button>
         </div>
 
-        <div class="menuOpen">
-          <button type="button" class="mobMenu__closeBtn">X</button>
+        <div class="menuOpen container js-menu-container" id="mobile-menu">
+          <button type="button" class="menuOpen__closeBtn js-close-menu">X</button>
           <div class="menuOpen__nav">
             <ul class="menuOpen__list list">
               <li class="menuOpen__item">
@@ -104,7 +111,7 @@
                   href=""
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="menuOpenSoc__link"
+                  class="menuOpenSoc__link link"
                   >Instagram</a
                 >
               </li>
@@ -113,7 +120,7 @@
                   href=""
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="menuOpenSoc__link"
+                  class="menuOpenSoc__link link"
                   >Twitter</a
                 >
               </li>
@@ -122,7 +129,7 @@
                   href=""
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="menuOpenSoc__link"
+                  class="menuOpenSoc__link link"
                   >Facebook</a
                 >
               </li>
@@ -131,7 +138,7 @@
                   href=""
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="menuOpenSoc__link"
+                  class="menuOpenSoc__link link"
                   >LinkedIn</a
                 >
               </li>
@@ -678,6 +685,13 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
