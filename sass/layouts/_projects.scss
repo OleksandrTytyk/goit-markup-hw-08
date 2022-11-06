@@ -55,7 +55,7 @@
     display: block;
     left: 0;
     bottom: 0;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms var(--timing-function);
 
     @include fonts(null, 18px, 1.56, 0.03em);
