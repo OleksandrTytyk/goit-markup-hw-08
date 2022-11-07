@@ -1,35 +1,32 @@
 .filter {
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
+  @media screen and (max-width: 767px) {
+    gap: 8px;
+    margin-bottom: 40px;
+  }
 
-@media screen and (max-width:767px) {
-  gap: 8px;
-  margin-bottom: 40px;
-}
-
-@include tablet {
-  justify-content: center;
-  margin-bottom: 30px;
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
   }
 
   @include desktop {
     margin-bottom: 50px;
   }
 
-&__item:not(:last-child) {
-  margin-right: 8px;
-}
-
-
-
-
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
 
   &__btn {
     font-family: inherit;
+  color: #212121;
+  
 
-    @media screen and (max-width:393px) {
+    @media screen and (max-width: 393px) {
       font-size: 3vw;
     }
 
