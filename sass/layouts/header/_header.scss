@@ -66,6 +66,7 @@
     &:focus {
       color: var(--accent-color);
     }
+    
 
     &--current::after {
       content: '';

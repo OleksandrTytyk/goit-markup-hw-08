@@ -9,10 +9,18 @@
     position: relative;
     margin-right: 7px;
 
+            @media screen and (max-width:450px) {
+      font-size: 2vw;
+    }
+
     @include fonts(null, 14px, 1.71, 0.03em);
   }
 
   .checkbox__link {
+
+        @media screen and (max-width:450px) {
+      font-size: 2vw;
+    }
 
     @include fonts(null, 14px, 1.71, 0.03em);
 

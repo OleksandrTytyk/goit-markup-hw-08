@@ -1,4 +1,5 @@
 :root {
+    --textColor: #757575;
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --white-text-color: #ffffff;
@@ -16,4 +17,5 @@
     --card-set-gap: 30px;
     --primary-icon-color: #afb1b8;
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }

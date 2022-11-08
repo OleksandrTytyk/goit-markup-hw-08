@@ -52,6 +52,7 @@
 
   &__btn {
     position: absolute;
+
     width: 30px;
     height: 30px;
     top: 8px;
@@ -73,6 +74,11 @@
   &__title {
     display: block;
     text-align: center;
+
+    @media screen and (max-width:450px) {
+      font-size: 3vw;
+    }
+    
 
     @include fonts(null, 20px, 1.15, 0.03em);
 

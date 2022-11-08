@@ -1,11 +1,10 @@
 .clients__title {
   @include fonts(null, 28px, 1.18, 0.03em);
 
-  //
-
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 30px;
+
 
   @include desktop {
     @include fonts(null, 36px, 1.18, 0.03em);
@@ -65,3 +64,4 @@
 .clients__icon {
   fill: currentColor;
 }
+
