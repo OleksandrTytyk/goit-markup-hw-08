@@ -768,6 +768,11 @@ body {
   color: var(--secondary-text-color);
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
 
 .features__text {
   font-size: 14px;
